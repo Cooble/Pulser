@@ -101,7 +101,6 @@ ISR(TIMER1_COMPA_vect)          // timer compare interrupt service routine
     MACRO_PINOFF();
   }
   Pulser::_dutySteps++;
- // if (Pulser::_dutySteps == DUTY_PRECISION)
   Pulser::_dutySteps %= DUTY_PRECISION;
 }
 
