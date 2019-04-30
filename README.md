@@ -12,3 +12,5 @@ First you need to set right pin(s) to be switched. To modify it replace code in 
 1. For example ```PORTD |= (1<<2)``` in MACRO_PINON() will set 3rd bit of port D to true.  
 2. Don't forget to change also MACRO_PINOFF() to ```PORTD &= ~(1<<2)```.  
 3. Also you need to set pinMode(OUTPUT) for those pins. To do this simply replace code in MACRO_PINMODE_INIT(). ```DDRD |= (1<<2)```
+
+![Alt text](YVOF3y5.jpg?raw=true "")
