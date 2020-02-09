@@ -14,3 +14,5 @@ First you need to set right pin(s) to be switched. To modify it replace code in 
 3. Also you need to set pinMode(OUTPUT) for those pins. To do this simply replace code in MACRO_PINMODE_INIT(). ```DDRD |= (1<<2)```
 
 ![Alt text](YVOF3y5.jpg?raw=true "")
+
+(And yes, that's Bill)
