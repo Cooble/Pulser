@@ -26,14 +26,17 @@
 
 //Edit this to change which pin(s) should be switched on
 //this is called when pin should be switched on
+//default pin is PD2
 #define MACRO_PINON() PORTD |= (1<<2)
 
 //Edit this to change which pin(s) should be switched off
 //It should switch off the pins which are switched on in MACRO_PINON()
+//default pin is PD2
 #define MACRO_PINOFF() PORTD &= ~(1<<2)
 
 //Edit this to be called when instance of pulser is created
 //set pinMode(yourPin,OUTPUT) for your output pin
+//default pin is PD2
 #define MACRO_PINMODE_INIT() DDRD |= (1<<2)
 
 class Pulser
